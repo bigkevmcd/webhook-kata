@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-
     id 'application'
 }
 
@@ -9,10 +8,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.dropwizard:dropwizard-core:1.3.9'
-    implementation('de.svenkubiak:jpushover:2.1.4') {
-        exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
-    }
+    implementation 'io.dropwizard:dropwizard-core:2.0.9'
+    implementation 'de.svenkubiak:jpushover:5.0.1'
 }
 
 mainClassName = 'com.bigkevmcd.katas.webhook.WebhookApplication'

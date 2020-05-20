@@ -15,18 +15,24 @@ choose the `build.gradle` file.
 You'll need to add a test framework to the Gradle configuration file.
 
 I'd recommend adding a dependency on `io.dropwizard:dropwizard-testing` and
-reading the Dropwizard [instructions](https://www.dropwizard.io/1.3.9/docs/manual/testing.html).
+reading the Dropwizard [instructions](https://www.dropwizard.io/en/release-2.0.x/manual/testing.html).
 
 The code is not easy to test in its current form, you'll need to refactor
 a bit to get started.
 
 ## Testing manually
 
+This is a Gradle project, you can run it with:
+
+```shell
+$ ./gradlew run --args="server config.yml"
+```
+
 The `testing.sh` script will simulate a GitHub hook notification with an
 appropriate payload.
 
-```
-  $ ./testing.sh
+```shell
+$ ./testing.sh
 ```
 
 Note that the tokens in the configuration file `config.yml` are _not_ valid, and
