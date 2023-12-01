@@ -7,9 +7,15 @@ repositories {
     jcenter()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 dependencies {
-    implementation 'io.dropwizard:dropwizard-core:2.0.9'
-    implementation 'de.svenkubiak:jpushover:5.0.1'
+    implementation 'io.dropwizard:dropwizard-core:4.0.4'
+    implementation 'de.svenkubiak:jpushover:5.1.0'
 }
 
 mainClassName = 'com.bigkevmcd.katas.webhook.WebhookApplication'

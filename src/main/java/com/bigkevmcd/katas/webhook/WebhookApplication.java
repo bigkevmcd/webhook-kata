@@ -1,9 +1,9 @@
 package com.bigkevmcd.katas.webhook;
 
 import com.bigkevmcd.katas.webhook.resources.WebhookResource;
-import io.dropwizard.Application;
-import io.dropwizard.setup.Bootstrap;
-import io.dropwizard.setup.Environment;
+import io.dropwizard.core.Application;
+import io.dropwizard.core.setup.Bootstrap;
+import io.dropwizard.core.setup.Environment;
 
 public class WebhookApplication extends Application<WebhookConfiguration> {
     public static void main(String[] args) throws Exception {

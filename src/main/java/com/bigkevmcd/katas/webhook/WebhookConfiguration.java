@@ -1,10 +1,10 @@
 package com.bigkevmcd.katas.webhook;
 
-import io.dropwizard.Configuration;
+import io.dropwizard.core.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 public class WebhookConfiguration extends Configuration {
     @NotEmpty
