@@ -5,29 +5,6 @@ code.
 
 It was deliberately not built in a TDD manner, *this is not production code*.
 
-## Setup
-
-To import the project in IntelliJ goto "File | New Project from Existing Sources" and
-choose the `build.gradle` file.
-
-## How to start
-
-You'll need to add a test framework to the Gradle configuration file.
-
-I'd recommend adding a dependency on `io.dropwizard:dropwizard-testing` and
-reading the Dropwizard [instructions](https://www.dropwizard.io/en/release-2.0.x/manual/testing.html).
-
-The code is not easy to test in its current form, you'll need to refactor
-a bit to get started.
-
-## Testing manually
-
-This is a Gradle project, you can run it with:
-
-```shell
-$ ./gradlew run --args="server config.yml"
-```
-
 The `testing.sh` script will simulate a GitHub hook notification with an
 appropriate payload.
 
